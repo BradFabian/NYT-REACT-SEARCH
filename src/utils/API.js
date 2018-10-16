@@ -1,3 +1,5 @@
+import axios from "axios";
+
 const api = {
   // Query NYT API
   // Grabs articles from the New York Times using the the New York Times article search API.

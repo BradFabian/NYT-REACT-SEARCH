@@ -1,28 +1,28 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+// Import React since we are using React.
+import React, { Component } from "react";
+// Import app css file.
+import "./App.css";
+// Import home page.
+import Home from "./containers/Home";
+// Import saved articles page.
+import Saved from "./containers/Saved";
+// Import React Router to add page routes.
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
+// App components.
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      // Create routes for Home and Saved components/pages.
+      <Router>
+        <div>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/saved" component={Saved} />
+        </div>
+      </Router>
     );
   }
 }
 
+// Export the App component.
 export default App;
