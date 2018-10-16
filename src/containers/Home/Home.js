@@ -11,8 +11,8 @@ import Jumbotron from "../../components/Jumbotron";
 // Import SearchForm component.
 import SearchForm from "../../components/SearchForm";
 // Import ResultsList component.
-import ResultsList from "../../components/ResultsList";
-import ResultsListItem from "../../components/ResultsListItem";
+import ResultsList from "../../components/ResultList";
+import ResultsListItem from "../../components/ResultLestItem";
 
 // Import Footer component.
 import Footer from "../../components/Footer";

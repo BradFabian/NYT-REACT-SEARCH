@@ -7,7 +7,7 @@ import Row from "../../components/Row";
 import Col from "../../components/Col";
 
 // RecipeListItem renders a bootstrap list item containing data from the recipe api call
-const ResultsListItem = ({
+const ResultListItem = ({
   _id,
   handleSaveButton,
   title,
@@ -40,4 +40,4 @@ const ResultsListItem = ({
 );
 
 // Export search results list component.
-export default ResultsListItem;
+export default ResultListItem;

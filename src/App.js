@@ -1,7 +1,7 @@
 // Import React since we are using React.
 import React, { Component } from "react";
 // Import app css file.
-import "./App.css";
+
 // Import home page.
 import Home from "./containers/Home";
 // Import saved articles page.
@@ -16,8 +16,8 @@ class App extends Component {
       // Create routes for Home and Saved components/pages.
       <Router>
         <div>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/saved" component={Saved} />
+          <Route path="/" component={Home} />
+          <Route path="/saved" component={Saved} />
         </div>
       </Router>
     );
